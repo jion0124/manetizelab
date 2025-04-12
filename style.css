@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  background-color: #ffffff; /* PCで見たときの背景 */
+  display: flex;
+  justify-content: center;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+}
+
+.container img {
+  width: 100%;
+  display: block; /* 画像の下に余白ができるのを防ぐ */
+}
+
+.fixed-center {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 450px;
+  z-index: 1000;
+}
+
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+.header-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+.header-btn {
+  position: absolute;
+  top: 50%;               /* 親の高さの50%の位置に置く */
+  right: 20px;            /* 右から20pxに配置 */
+  transform: translateY(-50%); /* 上に50%ずらして縦中央に揃える */
+  width: 30%;           /* ボタンの横幅（必要に応じて調整） */
+}
+
+.header-btn img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cta-join-btn {
+  position: absolute;
+  top: 50%;               /* 親の高さの50%の位置に置く */
+  right: 18px;            /* 右から20pxに配置 */
+  transform: translateY(-50%);
+  display: inline-block;
+  background-color: #4285f4;
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.2;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2); /* 右下に影 */
+  white-space: nowrap;
+}
+
+
+.price-section {
+  background-color: #f5f1eb; /* ← この色が画像の背景に近い */
+  padding: 10px 10px;
+  padding-top: 40px;
+}
+
+.section-title {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #333; /* ほぼ真っ黒に近い文字色 */
+  text-align: center;
+  margin: 10px 0;
+}
+
+.plan-box {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto 40px;
+}
+
+.plan-box img {
+  width: 100%;
+  display: block;
+}
+
+.plan-btn {
+  position: absolute;
+  bottom: 7.5%;         /* 画像下からの距離を調整 */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 30px;
+  border-radius: 32px;
+  font-size: 18px;
+  /* font-weight: bold; */
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.plan-btn.solid {
+  background-color: #4285f4; /* 青色 */
+  color: white;
+  padding: 14px 56px;
+  bottom: 9%; 
+}
+
+.plan-btn.outline {
+  background-color: white;
+  color: #4285f4;
+  border: 2px solid #4285f4;
+}
+
+.cta-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.cta-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+.cta-buttons {
+  position: absolute;
+  width: 100%;
+  bottom: 4%; /* ← 画像内のボタン位置に調整 */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.hero-cta-buttons {
+  position: absolute;
+  width: 100%;
+  bottom: 8%; /* ← 画像内のボタン位置に調整 */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;        /* ← 垂直方向に中央揃え！ */
+  justify-content: center;
+  line-height: 1.4;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-family: 'Noto Sans JP', sans-serif;
+  /* font-weight: bold; */
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn.left {
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+  width: 32.5%;
+  font-size: 15px;
+  flex-direction: column; 
+}
+
+.btn.left .line1 {
+  font-size: 14px;
+}
+
+.btn.right {
+  background-color: #4285f4;
+  color: white;
+  width: 42.5%;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.footer {
+  background-color: #ffe25f; /* 背景の黄色 */
+  text-align: center;
+  padding: 24px 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+  line-height: 1.8;
+}
+
+.footer-links li {
+  margin: 4px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #555;
+  margin: 0;
+}
+
